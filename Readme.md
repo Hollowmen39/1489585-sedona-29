@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Trufanov Vitali](https://up.htmlacademy.ru/htmlcss/29/user/1489585).
-* Наставник: `Неизвестно`.
+* Наставник: `[Егор Глебов]`(https://htmlacademy.ru/profile/beast).
 
 ---
 
