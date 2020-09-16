@@ -1,0 +1,200 @@
+/* pt-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+
+}
+/* pt-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+
+}
+
+:root{
+  --basic-black:#000000;
+  --basic-white:#FFFFFF;
+  --basic-blue:#81B3D2;
+  --basic-blue-focus:#669EC0;
+  --basic-blue-active:#5496BD;
+  --basic-grey:#EEEEEE;
+  --basic-grey-light:#F2F2F2;
+  --basic-grey-dark:#EBEBEB;
+
+  --special:#766357;
+  --special-focus:#604E43;
+  --special-active:#503E33;
+}
+
+body{
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-image: url();
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.page a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main header */
+.
+
+.main-navigation{
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.site-navigation{
+  list-style: none;
+}
+
+.site-navigation a{
+  color: var(--basic-black);
+  font-weight: bold;
+}
+
+/* Filters */
+
+.filters-search p{
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.filters-search ul{
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.greeting{
+  align-items: center;
+  text-align: center;
+}
+
+.greeting h1{
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+
+.features{
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.features h2{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.features-text{
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.offers-list{
+  list-style: none;
+}
+
+.offers-item{
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.offers-item h3{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.container-columns{
+  background-color: var(--basic-grey);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.features-last h2{
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.search{
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.button{
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  border: none;
+}
+
+.button:hover,
+.button:focus{
+  background-color: var(--basic-blue-focus);
+}
+
+.button:active{
+  background-color: var(--basic-blue-active);
+  opacity: 0.3;
+}
+
+.button-search{
+  background-color: var(--special);
+}
+
+.button-search:hover,
+.button-search:focus{
+  background-color: var(--special-focus);
+   opacity: 0.3;
+}
+
+.button-search:active{
+  background-color: var(--special-active);
+  opacity: 0.3;
+}
+
+.footer-contacts{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.contacts-phone{
+  color: inherit;
+}
+
+.social ul{
+  list-style: none;
+}

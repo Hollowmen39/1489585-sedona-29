@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+  <!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header>
-      <nav>
-        <a><img src="img/logo.svg" alt="Логотип Sedona"></a>
-        <ul>
+
+  <body class="page-body">
+
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" alt="Логотип Sedona" width="130" height="70">
+        </a>
+        <ul class="site-navigation">
           <li><a href="index.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
@@ -17,94 +24,127 @@
       </nav>
     </header>
 
-  <main>
+  <main class="container">
 
-    <section>
-      <h1>Седона-небольшой городок в аризоне заслуживающий большего!</h1>
-      <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+    <section class="greeting">
+      <h1>Седона-небольшой городок в аризоне,<br> заслуживающий большего!</h1>
+      <p>
+        Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
+      </p>
     </section>
 
-    <section>
-      <h2>Настроящий городок</h2>
-      <span>-№1-</span>
-      <p>Седона- не аттрацион для туристов, там<br>
-      тесёт своя жизнь</p>
+    <section class="features">
+      <h2>Настоящий<br> городок</h2>
+      <span class="features-text">-№1-</span>
+      <p class="features-text">
+        Седона- не аттрацион для туристов, там<br>
+      тесёт своя жизнь
+    </p>
     </section>
 
-    <section>
-      <ul>
-        <li>
+    <section class="offers">
+      <ul class="offers-list">
+        <li class="offers-item">
           <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле,<br> всё как в кино!</p>
         </li>
-        <li>
+        <li class="offers-item">
           <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
         </li>
-         <li>
+         <li class="offers-item">
             <h3>Сувениры</h3>
-                <p>Не только китайского, но и местного<br> производства!</p>
+                <p>
+                  Не только китайского, но и местного<br> производства!
+                </p>
           </li>
         </ul>
     </section>
 
-    <section>
+    <section class="features">
       <h2>Там есть<br> мост дьявола</h2>
-      <span>-№2-</span>
-      <p>
+      <span class="features-text">-№2-</span>
+      <p class="features-text">
         Да, по нему можно пройти! Если конечно<br>
       вы осмелитесь
     </p>
     </section>
-
-    <section>
+    <div class="container-columns">
+    <section class="features-last">
       <h2>Небольшая<br>площадь</h2>
-          <span>-№3-</span>
-          <p>
+          <span class="offers-item">-№3-</span>
+          <p class="offers-item">
             Все достопримечательности<br>находятся очень близко
           </p>
         </section>
 
-      <section>
+      <section class="features-last">
           <h2>Красивая<br>дорога</h2>
-          <span>-№4-</span>
-          <p>
+          <span class="offers-item">-№4-</span>
+          <p class="offers-item">
             Ехать в седону из Лас-вегаса совсем<br>не скучно!
           </p>
         </section>
 
-      <section>
+      <section class="features-last">
           <h2>Мало<br>туристов</h2>
-          <span>-№5-</span>
-          <p>Большинство едет в гранд каньон<br>и толпится там</p>
+          <span class="offers-item">-№5-</span>
+          <p class="offers-item">Большинство едет в гранд каньон<br>и толпится там</p>
       </section>
+    </div>
 
-      <section>
+      <section class="search">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button type="button">Поиск гостиницы в Седоне</button>
-        <!--Видимо при нажатии кнопки должна появлться форма поиска с фильтрами-->
+        <p class="offers-item">
+          Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>
+        <button class="button button-search" type="button">Поиск гостиницы в Седоне</button>
         <!-- Здесь будет карта-->
       </section>
 
   </main>
 
-  <footer>
-    <section>
-      <p>#Visitsedona</p>
-      Тел:<a href="tel:+7(495)666-01-66">+7(495)666-01-66</a>
+  <footer class="page-footer main-footer">
+    <section class="footer-contacts">
+      <p class="hashtag">#Visitsedona</p>
+      Тел:<a class="contacts-phone" href="tel:+7(495)666-01-66">+7(495)666-01-66</a>
     </section>
 
+<div class="social">
       <ul>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Youtube</a></li>
+        <li><a class="button social-button" href="#">Twitter</a></li>
+        <li><a class="button social-button" href="#">Facebook</a></li>
+        <li><a class="button social-button" href="#">Youtube</a></li>
       </ul>
+    </div>
 
-    <p>
+    <p class="html-academy">
       Website by
-      <a href="https://htmlacademy.ru">HTML Academy</a>
+      <a class="button-academy" href="https://htmlacademy.ru">HTML Academy</a>
     </p>
   </footer>
+
+<section class="search-hotels">
+  <form action="https://echo.htmlacademy.ru/courses" method="post">
+<p>
+    <label for="data-into">Дата заезда:</label>
+    <input type="date" name="date" value="24 апреля 2017">
+</p>
+<p>
+    <label for="data-exit">Дата выезда:</label>
+    <input type="date" name="date" value="4 июня 2017">
+  </p>
+  <p>
+    <label for="old">Взрослые:</label>
+    <input type="number" value="2">
+    <label for="children">Дети:</label>
+    <input type="number" value="0">
+  </p>
+  <p>
+    <button class="button social-button" type="button">Найти</button>
+  </form>
+
+</section>
+
   </body>
 </html>
