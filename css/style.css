@@ -6,7 +6,6 @@
   src: local('PT Sans'), local('PTSans-Regular'),
        url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
-
 }
 /* pt-sans-700 - latin_cyrillic */
 @font-face {
@@ -16,7 +15,6 @@
   src: local('PT Sans Bold'), local('PTSans-Bold'),
        url('../fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
-
 }
 
 /* Variables */
@@ -30,6 +28,7 @@
   --basic-grey:#EEEEEE;
   --basic-grey-light:#F2F2F2;
   --basic-grey-dark:#EBEBEB;
+  --basic-grey-light-page:#CACACA;
 
   --special:#766357;
   --special-focus:#604E43;
@@ -80,6 +79,10 @@ img{
   font-weight: bold;
 }
 
+.nav-hotels a{
+  color: var(--special);
+  font-weight: bold;
+}
 
 /* Filters */
 
@@ -106,6 +109,7 @@ img{
   font-size: 21px;
   line-height: 26px;
 }
+
 
 /* Search */
 .catalog a{
@@ -215,6 +219,18 @@ img{
   background-color: var(--special-active);
 }
 
+.button-page{
+  background-color: var(--basic-grey-light-page);
+}
+.button-page:hover,
+.button-page:focus{
+  background-color: var(--basic-black);
+}
+
+.button-page:active{
+  background-color: var(--basic-blue);
+  opacity: 0.3;
+}
 /* Main footer */
 
 .footer-contacts{
