@@ -23,6 +23,7 @@
     </header>
 
     <main class="container">
+      <img src="img\background-hotels.jpg" width="1200" height="217" alt="Пейзаж Sedona">
       <h1 class="visually-hidden">Поиск Гостиницы</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
@@ -49,47 +50,64 @@
             По рейтингу
           </li>
         </ul>
-        <ul>
-          <li>
-            <button class="button button-page" type="button">Вверх</button>
-          </li>
-          <li>
-            <button class="button button-page" type="button">Вниз</button>
-          </li>
-        </ul>
+        <div class="list-scroll">
+            <button class="button button-scroll" type="button">
+                <img src="img\triangle.svg" width="11" height="10" alt="Вверх">
+            </button>
+
+            <button class="button button-scroll" type="button">
+              <img src="img\down.svg" width="11" height="10" alt="Вниз">
+            </button>
+        </div>
+
       </section>
 
         <section class="catalog">
         <ul>
           <li>
             <a href="#">
-          <img src="img/Layer21.png" width="135" height="90" alt="Гостиница Amara resort & spa">
+          <img src="img\amara.jpg" width="135" height="90" alt="Гостиница Amara resort & spa">
             <h3>Amara resort & spa</h3>
             </a>
             <p>Гостиница от 4000 р.</p>
             <!-- Ждём изучения таблиц для разделения-->
             <button class="button button-details" type="button">Подробнее</button>
             <button class="button button-book" type="button">Забронировать</button>
+            <p>
+              <img src="img\star.svg" width="19" height="17" alt="Звезда">
+              <img src="img\star.svg" width="19" height="17" alt="Звезда">
+              <img src="img\star.svg" width="19" height="17" alt="Звезда">
+              <img src="img\star.svg" width="19" height="17" alt="Звезда">
+            </p>
             <p>Рейтинг: 8,5</p>
           </li>
           <li>
             <a href="#">
-              <img src="img/Layer89.png" width="135" height="90" alt="Мотель Desert Quail Inn">
+              <img src="img\desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
             <h3>Desert Quail Inn</h3>
             </a>
             <p>Мотель от 3000 р.</p>
             <button class="button button-details" type="button">Подробнее</button>
             <button class="button button-book" type="button">Забронировать</button>
+            <p>
+              <img src="img\star.svg" width="19" height="17" alt="Звезда">
+              <img src="img\star.svg" width="19" height="17" alt="Звезда">
+              <img src="img\star.svg" width="19" height="17" alt="Звезда">
+            </p>
             <p>Рейтинг: 8,9</p>
           </li>
           <li>
             <a href="#">
-              <img src="img/Rectangle.png" width="135" height="90" alt="Апартаменты Villas at poco Diablo">
+              <img src="img\villas.jpg" width="135" height="90" alt="Апартаменты Villas at poco Diablo">
             <h3>Villas at poco Diablo</h3>
             </a>
             <p>Апартаменты от 2000 р.</p>
             <button class="button button-details" type="button">Подробнее</button>
             <button class="button button-book" type="button">Забронировать</button>
+            <p>
+              <img src="img\star.svg" width="19" height="17" alt="Звезда">
+              <img src="img\star.svg" width="19" height="17" alt="Звезда">
+            </p>
             <p>Рейтинг: 9,2</p>
           </li>
         </ul>
@@ -102,18 +120,32 @@
         Тел:<a class="contacts-phone" href="tel:+7(495)666-01-66">+7(495)666-01-66</a>
       </section>
 
-  <div class="social">
-        <ul>
-          <li><a class="button social-button" href="#">Twitter</a></li>
-          <li><a class="button social-button" href="#">Facebook</a></li>
-          <li><a class="button social-button" href="#">Youtube</a></li>
-        </ul>
-      </div>
+      <div class="social">
+            <ul>
+              <li>
+                <a class="button social-button" href="#">
+                  <img src="img\twitter.svg" width="17" height="17" alt="Twitter">
+                </a>
+              </li>
+              <li>
+                <a class="button social-button" href="#">
+                  <img src="img\fb-icon.svg" width="12" height="22" alt="Facebook">
+                </a>
+              </li>
+              <li>
+                <a class="button social-button" href="#">
+                  <img src="img\youtube.svg" width="20" height="16" alt="Youtube">
+                </a>
+              </li>
+            </ul>
+          </div>
 
-      <p class="html-academy">
-        Website by
-        <a class="button-academy" href="https://htmlacademy.ru">HTML Academy</a>
-      </p>
+          <p class="html-academy">
+            Website by
+            <a class="button-academy" href="https://htmlacademy.ru">
+              <img src="img\html.png" width="115" height="41" alt="HTML Academy">
+            </a>
+          </p>
     </footer>
 </body>
 </html>

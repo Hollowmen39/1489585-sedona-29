@@ -33,6 +33,8 @@
   --special:#766357;
   --special-focus:#604E43;
   --special-active:#503E33;
+
+  --special-logo-active:#BDBBBC;
 }
 
 /* Global */
@@ -51,6 +53,14 @@ body{
   background-image: url();
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .page a{
@@ -141,7 +151,8 @@ img{
   line-height: 21px;
 }
 
-.offers-list{
+.offers-list,
+.catalog li{
   list-style: none;
 }
 
@@ -186,14 +197,15 @@ img{
   border: none;
 }
 
-.button:hover{
-  background-color: var(--basic-blue);
-}
-.button:focus{
+.button:hover,
+.button:focus,
+.social-button:hover,
+.social-button:focus{
   background-color: var(--basic-blue-focus);
 }
 
-.button:active{
+.button:active,
+.social-button:active{
   background-color: var(--basic-blue-active);
   opacity: 0.3;
 }
@@ -220,7 +232,7 @@ img{
 }
 
 .button-page{
-  background-color: var(--basic-grey-light-page);
+  background-color: var(--basic-white);
 }
 .button-page:hover,
 .button-page:focus{
@@ -231,6 +243,18 @@ img{
   background-color: var(--basic-blue);
   opacity: 0.3;
 }
+
+
+/*Пока не работает */
+.button-academy:hover,
+.button-academy:focus{
+  background-color: var(--basic-blue);
+}
+/*Пока не работает */
+.button-academy:active{
+  background-color: var(--special-logo-active);
+}
+
 /* Main footer */
 
 .footer-contacts{
