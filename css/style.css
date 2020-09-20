@@ -19,6 +19,8 @@
 
 }
 
+/* Variables */
+
 :root{
   --basic-black:#000000;
   --basic-white:#FFFFFF;
@@ -33,6 +35,8 @@
   --special-focus:#604E43;
   --special-active:#503E33;
 }
+
+/* Global */
 
 body{
   min-width: 1220px;
@@ -60,7 +64,7 @@ img{
 }
 
 /* Main header */
-.
+/* User navigation */
 
 .main-navigation{
   color: var(--basic-black);
@@ -76,8 +80,10 @@ img{
   font-weight: bold;
 }
 
+
 /* Filters */
 
+/* Breadcrumbs */
 .filters-search p{
   font-weight: bold;
   font-size: 21px;
@@ -101,6 +107,19 @@ img{
   line-height: 26px;
 }
 
+/* Search */
+.catalog a{
+ text-decoration: none;
+ color: var(--basic-black);
+ }
+
+.catalog h3:focus{
+  color: var(--basic-blue);
+}
+.catalog h3:active{
+  color:  var(--basic-black);
+  opacity: 0.3;
+}
 
 .features{
   color: var(--basic-white);
@@ -150,6 +169,8 @@ img{
   line-height: 24px;
 }
 
+/* Button */
+
 .button{
   font-weight: bold;
   font-size: 21px;
@@ -161,7 +182,9 @@ img{
   border: none;
 }
 
-.button:hover,
+.button:hover{
+  background-color: var(--basic-blue);
+}
 .button:focus{
   background-color: var(--basic-blue-focus);
 }
@@ -171,20 +194,28 @@ img{
   opacity: 0.3;
 }
 
-.button-search{
+.button-search,
+.button-book{
   background-color: var(--special);
 }
 
 .button-search:hover,
-.button-search:focus{
+.button-book:hover{
+  background-color: var(--special);
+}
+.button-search:hover,
+.button-search:focus,
+.button-book:hover,
+.button-book:focus{
   background-color: var(--special-focus);
-   opacity: 0.3;
 }
 
-.button-search:active{
+.button-search:active,
+.button-book:active{
   background-color: var(--special-active);
-  opacity: 0.3;
 }
+
+/* Main footer */
 
 .footer-contacts{
   font-size: 21px;
