@@ -58,7 +58,7 @@ body{
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
-  background-image: url();
+  background-image: url("");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -90,12 +90,22 @@ img{
 .main-header{
   margin-bottom: 70px;
 }
-main::before{
-    background-image: url(img\background-sedona.jpg);
-    background-repeat: no-repeat;
-    background-size: 1200px 509px;
+
+.greeting::before {
+  content: "Пейзаж Седону";
+ top: 5px;
+ left: 5px;
+ padding-bottom: 20px;
+ font-size: 30px;
+ color: #e50000;
+  background-image: url("../img/pattern-light.jpg");
+  background-size: 100% auto;
+  background-position: center, 0 0;
 }
+
 /* User navigation
+background-repeat: no-repeat;
+background-size: 1200px 509px;
 */
 .container {
   width: 1200px;
