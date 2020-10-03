@@ -8,28 +8,52 @@
   </head>
 
   <body class="page-body inner-page">
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo.png" alt="Логотип Sedona" width="130" height="70">
-        </a>
-        <ul class="site-navigation">
-          <li><a  class="tabs" href="index.html">Информация</a></li>
-          <li><a class="tabs" href="blank.html">Фото и видео</a></li>
-          <li><a class="tabs" href="blank.html">Карта штата</a></li>
+          <a class="main-header-logo">
+            <img src="img/logo.png" alt="Логотип Sedona" width="130" height="70">
+          </a>
+          <div class="container">
+          <ul class="site-navigation">
+            <li><a href="index.html">Информация</a></li>
+            <li><a href="blank.html">Фото и видео</a></li>
+            <li><a href="blank.html">Карта штата</a></li>
           <li class="nav-hotels tabs"><a href="hotels.html">Гостиницы</a></li>
-        </ul>
+          </ul>
+      </div>
       </nav>
     </header>
 
     <main class="container sedona-hotels">
       <h1 class="visually-hidden">Поиск Гостиницы</h1>
-      <section class="filters">
+
+    <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <!--Задесь будет фильтр
-      Судя по макету есть 6 радио кнопок
-    затем Диапозаон и кнопка показать это видимо кнопка работы фильтра -->
-      </section>
+        <form method="get" action="">
+          <legend>Стоимость с сутки (Р):</legend>
+          <fieldset class="filter-item">
+            <div class="range-filter">
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="3000">
+                </label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+
+
+            </div>
+          </fieldset>
+        </form>
+    </section>
 
       <section class="filters filters-search">
         <h2 class="visually-hidden">Список гостиниц</h2>

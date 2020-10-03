@@ -41,6 +41,7 @@
   --special:#766357;
   --special-focus:#604E43;
   --special-active:#503E33;
+  --special-circle: #ABABAB;
 
   --special-logo-active:#BDBBBC;
 }
@@ -70,7 +71,6 @@ body{
   height: 1px;
   margin: -1px;
 }
-
 .page-body{
   min-height: 100%;
   display: grid;
@@ -80,7 +80,6 @@ body{
 .page a{
   text-decoration: none;
 }
-
 img{
   max-width: 100%;
   height: auto;
@@ -94,18 +93,18 @@ img{
 .main-navigation{
   background-color: var(--basic-white);
   color: var(--basic-black);
-  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.main-navigation-wrapper{
+.main-navigation .container{
   width: 100%;
   margin-bottom: 16px;
 }
 .site-navigation{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .site-navigation a{
   width: 94px;
@@ -113,12 +112,12 @@ img{
 }
 /* Logo */
 .main-header-logo{
+  position: absolute;
   margin-top: 0 ;
-  order: 3;
+  order: -1;
   width: 130px;
   height: 70px;
 }
-
 .site-navigation li{
   width: auto;
   height: 26px;
@@ -169,7 +168,76 @@ img{
   background-position: 0 0, 0 0;
 }
 /* Filters */
-
+.filter-item{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.range-filter{
+  width: 260px;
+  margin-top: 10.5px;
+}
+.filter-item legend{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+.range-controls .scale{
+  height: 2px;
+  background-color: var(--basic-white);
+  opacity: 0.3;
+}
+.range-controls .bar{
+  width: 70%;
+  height: 2px;
+  background-color: var(--basic-white);
+}
+.range-controls .toggle{
+  position: absolute;
+  top: 31px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 5.5px solid var(--basic-white);
+  background-color: var(--special-circle);
+  border-radius: 50%;
+  box-shadow: 0 2px 0 0 var(--special-circle);
+  cursor: pointer;
+}
+.range-controls .toggle-min{
+  left: 10px;
+}
+.range-controls .toggle-max{
+  left: 160px;
+}
+.price-controls label{
+  font-size: 14px;
+  line-height: 21px;
+}
+.price-controls input {
+  width: 60px;
+  padding: 8px;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  background-color: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+.price-controls{
+  display: flex;
+  justify-content: space-between;
+}
 /* Breadcrumbs */
 .filters-search p{
   font-weight: bold;
