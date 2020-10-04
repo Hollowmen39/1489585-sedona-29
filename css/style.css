@@ -42,6 +42,7 @@
   --special-focus:#604E43;
   --special-active:#503E33;
   --special-circle: #ABABAB;
+  --special-locked: #6A6A6A;
 
   --special-logo-active:#BDBBBC;
 }
@@ -66,10 +67,15 @@ body{
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .page-body{
   min-height: 100%;
@@ -168,6 +174,61 @@ img{
   background-position: 0 0, 0 0;
 }
 /* Filters */
+.filter{
+  width: 313px;
+}
+.filter fieldset{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+  border: none;
+}
+.filter fieldset:first-child{
+  margin-bottom:25px;
+}
+.filter ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 25px;
+}
+.filter-option {
+  margin-bottom: 19px;
+  padding-left: 45px;
+}
+.filter-option label{
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--basic-white);
+}
+.filter-input-checkbox:disabled  + label{
+  color: var(--special-locked);
+}
+.filter-input-checkbox + label::before{
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 0;
+  width: 19px;
+  height: 19px;
+  border: 2px solid var(--basic-black);
+}
+.filter-input-checkbox:checked + label::after{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  width: 22px;
+  height: 17px;
+  background-image: url("../img/Shape.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 .filter-item{
   margin: 0;
   padding: 0;
