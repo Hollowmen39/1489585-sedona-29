@@ -111,14 +111,14 @@ img{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
 }
 .site-navigation a{
   color: var(--basic-black);
   font-weight: bold;
   width: 94px;
-  height: 26px;
   margin-left: 73px;
-  margin-top: 14px;
+
 }
 .site-navigation li:nth-child(2){
     margin-right: 345px;
@@ -136,7 +136,6 @@ img{
 }
 .site-navigation li{
   width: auto;
-  height: 26px;
 }
 .site-navigation{
   margin: 0;
@@ -328,17 +327,38 @@ img{
 .button-show{
   align-items: center;
 }
+
+
+
 /* Breadcrumbs */
+.filters-search{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  weight: 1055px;
+  padding: 0;
+  margin: 0;
+  margin-left: 72px;
+  margin-right: 72px;
+}
+
 .filters-search p{
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
 }
 
-.filters-search ul{
-  list-style: none;
+.filters-option{
+  weight: 354px;
+  font-weight: 400;
   font-size: 12px;
   line-height: 18px;
+  margin-right: 290px;
+
+}
+.filters-option .button-filters{
+  margin-left: 33px;
+  margin-right: 33px;
 }
 
 .greeting{
@@ -360,11 +380,38 @@ img{
 .catalog{
   font-size: 14px;
   line-height: 21px;
+  padding: 0;
+  margin: 0;
+  margin-left: 72px;
+  margin-right: 72px;
+}
+.catalog-list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.catalog-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+}
+.catalog-info{
+  margin-right: 500px;
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+}
+.catalog-rating{
+
 }
 .catalog h3{
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+
+
 }
 .catalog a{
  text-decoration: none;
@@ -529,12 +576,7 @@ margin: 0 auto;
 
 
 
-.filters-option{
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
+
 
 /* Modal */
 .modal{
@@ -671,6 +713,18 @@ margin: 0 auto;
 .button-page:active{
   background-color: var(--basic-blue);
   opacity: 0.3;
+}
+
+.button-scroll{
+  background: none;
+  border: none;
+}
+.button-scroll src:hover,
+.button-scroll src:focus{
+  fill: var(--basic-black);
+}
+.button-scroll src:active{
+  fill: var(--basic-blue);
 }
 
 .button-filters{
