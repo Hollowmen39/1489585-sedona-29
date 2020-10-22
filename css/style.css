@@ -357,6 +357,15 @@ img{
 }
 
 /* Search  Hotels*/
+.catalog{
+  font-size: 14px;
+  line-height: 21px;
+}
+.catalog h3{
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
 .catalog a{
  text-decoration: none;
  color: var(--basic-black);
@@ -492,9 +501,11 @@ margin: 0 auto;
 }
 .footer-contacts{
   margin: 0;
+  margin-top: 23px;
   width: 251px;
 }
 .social{
+  margin: 0;
   width: 150px;
   text-align: center;
   display: flex;
@@ -508,12 +519,12 @@ margin: 0 auto;
 }
 .html-academy{
   margin: 0;
-  margin-top: 56px;
-  width: 195px;
-  outline: 5px solid #ff0000;
-  display: flex;
+  width: 200px;
   font-size: 14px;
   line-height: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -585,6 +596,9 @@ margin: 0 auto;
 }
 .button-details,
 .button-book{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
   padding: 3px 16px;
 }
 .social{
