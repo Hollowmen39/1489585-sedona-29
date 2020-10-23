@@ -386,32 +386,56 @@ img{
   margin-right: 72px;
 }
 .catalog-list{
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
+.catalog-list::before,
+.catalog-list::after {
+  content: "";
+  display: block;
+  width: 1200px;
+  height: 1px;
+  position: absolute;
+  left: -73px;
+  background-image: url("../img/line.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .catalog-item{
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 150px;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
+  border-top: 10px black;
+  border-bottom: : 10px black;
 }
 .catalog-info{
   margin-right: 500px;
-  outline: 5px solid rgba(0, 0, 255, 0.7);
-}
-.catalog-rating{
+  margin-top: 20px;
+  margin-bottom: 30px;
 
 }
-.catalog h3{
+.catalog-info pre{
+  margin-bottom: 20px;
+  line-height: 0.8em;
+}
+.catalog-rating p{
+ text-align: right;
+}
+.rating-level{
+  display: block;
+  padding: 3px 15px;
+  background-color: var(--basic-grey-light);
+}
+.hotel-name{
+  margin: 0;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-
-
 }
 .catalog a{
  text-decoration: none;
@@ -533,11 +557,19 @@ margin: 0 auto;
   line-height: 21px;
 }
 
-
+/* search */
 .search{
-  font-size: 30px;
+  font-size: 14px;
   line-height: 24px;
   text-align: center;
+  margin-top: 60px;
+}
+.search-interest{
+  font-size: 30px;
+  font-weight: bold;
+}
+.search p:last-of-type{
+  padding-bottom: 20px;
 }
 
 /* footer */
@@ -545,11 +577,22 @@ margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
+  padding: 0;
+  margin-right: 138px;
+  margin-left: 111px;
+  margin-top: 23px;
+  margin-bottom: 36px;
 }
 .footer-contacts{
-  margin: 0;
-  margin-top: 23px;
-  width: 251px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.hashtag{
+  margin-bottom: 0.6em;
+}
+.contacts-phone{
+  color: inherit;
 }
 .social{
   margin: 0;
@@ -719,11 +762,11 @@ margin: 0 auto;
   background: none;
   border: none;
 }
-.button-scroll src:hover,
-.button-scroll src:focus{
+.button-scroll:hover path,
+.button-scroll:focus path{
   fill: var(--basic-black);
 }
-.button-scroll src:active{
+.button-scroll:active path{
   fill: var(--basic-blue);
 }
 
@@ -763,15 +806,4 @@ margin: 0 auto;
 
 .button-academy:active path{
   fill: var(--special-logo-active);
-}
-
-/* Main footer */
-
-.footer-contacts{
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-}
-.contacts-phone{
-  color: inherit;
 }
