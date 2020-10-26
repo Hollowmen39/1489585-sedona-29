@@ -5,11 +5,11 @@
   font-weight: 400;
   src: url('../fonts/pt-sans-v12-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
   src: local('PT Sans'), local('PTSans-Regular'),
-       url('../fonts/pt-sans-v12-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/pt-sans-v12-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/pt-sans-v12-latin_cyrillic-regular.svg#PTSans') format('svg'); /* Legacy iOS */
+  url('../fonts/pt-sans-v12-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/pt-sans-v12-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/pt-sans-v12-latin_cyrillic-regular.svg#PTSans') format('svg'); /* Legacy iOS */
 }
 /* pt-sans-700 - latin_cyrillic */
 @font-face {
@@ -18,11 +18,11 @@
   font-weight: 700;
   src: url('../fonts/pt-sans-v12-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
   src: local('PT Sans Bold'), local('PTSans-Bold'),
-       url('../fonts/pt-sans-v12-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/pt-sans-v12-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/pt-sans-v12-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/pt-sans-v12-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/pt-sans-v12-latin_cyrillic-700.svg#PTSans') format('svg'); /* Legacy iOS */
+  url('../fonts/pt-sans-v12-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/pt-sans-v12-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/pt-sans-v12-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/pt-sans-v12-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/pt-sans-v12-latin_cyrillic-700.svg#PTSans') format('svg'); /* Legacy iOS */
 }
 
 /* Variables */
@@ -52,7 +52,7 @@
 /* Global */
 
 body{
-min-width: 1220px;
+  min-width: 1220px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -153,14 +153,13 @@ img{
   margin: 0 auto;
   padding: 0 10px;
 }
-
-
-
 .nav-hotels a{
   color: var(--special);
   font-weight: bold;
 }
-
+.page-shadow{
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
 /* background */
 .main-content::before {
   content: "";
@@ -169,7 +168,7 @@ img{
   height: 509px;
   background-image: url("../img/welcome.svg"),
   url("../img/white-border.png"),
-  url("../img/Sedona.jpg") ;
+  url("../img/sedona.jpg") ;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, bottom, center;
 }
@@ -389,12 +388,14 @@ img{
   margin-right: 72px;
 }
 .catalog-list{
-  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+}
+.catalog-list li{
+  position: relative;
 }
 .catalog-list li::before{
   content: "";
@@ -431,7 +432,7 @@ img{
 
 }
 .catalog-rating p{
- text-align: right;
+  text-align: right;
 }
 .hotel-price td{
   width: 90px;
@@ -452,9 +453,9 @@ img{
   line-height: 26px;
 }
 .catalog a{
- text-decoration: none;
- color: var(--basic-black);
- }
+  text-decoration: none;
+  color: var(--basic-black);
+}
 
 .catalog h3:focus{
   color: var(--basic-blue);
@@ -522,20 +523,20 @@ img{
   margin: 0 auto;
 }
 .offers-list>.food::before{
-content: "";
-display: block;
-width: 75px;
-height: 70px;
-background-image: url("../img/food.svg");
-margin: 0 auto;
+  content: "";
+  display: block;
+  width: 75px;
+  height: 70px;
+  background-image: url("../img/food.svg");
+  margin: 0 auto;
 }
 .offers-list>.present::before{
-content: "";
-display: block;
-width: 65px;
-height: 75px;
-background-image: url("../img/present.svg");
-margin: 0 auto;
+  content: "";
+  display: block;
+  width: 65px;
+  height: 75px;
+  background-image: url("../img/present.svg");
+  margin: 0 auto;
 }
 
 
@@ -562,7 +563,7 @@ margin: 0 auto;
 }
 
 .present::before{
- background-image: no-repeat url("img\present.svg");
+  background-image: no-repeat url("img\present.svg");
 }
 
 .container-columns{
@@ -586,15 +587,19 @@ margin: 0 auto;
   padding-bottom: 20px;
 }
 
-/* footer
-margin-right: 138px;
-margin-left: 111px;
-*/
+/* footer*/
 .main-footer{
   text-align: center;
   padding: 0;
   margin-top: 23px;
   margin-bottom: 36px;
+  background-color: var(--basic-white);
+}
+.absolute-footer{
+  position: relative;
+  left: 0;
+  bottom: 150px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .main-footer .container{
   display: grid;
@@ -641,7 +646,7 @@ margin-left: 111px;
 
 /* Modal */
 .modal{
-  display: none;
+  display: ;
   position: fixed;
   top: 0;
   right: 0;
@@ -653,7 +658,7 @@ margin-left: 111px;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  width: 568px;
+  width: 570px;
   height: 395px;
 }
 .appointment-form{
@@ -806,7 +811,7 @@ margin-left: 111px;
 /*Пока не работает */
 .button-academy:hover path,
 .button-academy:focus path{
- fill: var(--basic-blue);
+  fill: var(--basic-blue);
 }
 /*Пока не работает */
 
