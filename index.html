@@ -9,8 +9,8 @@
 </head>
 
 <body class="page-body">
-
-  <header class="main-header container page-shadow">
+<div class="page-shadow">
+  <header class="main-header container">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
         <img src="img/logo.png" alt="Логотип Sedona" width="130" height="70">
@@ -26,7 +26,7 @@
     </nav>
   </header>
 
-  <main class="container main-content page-shadow">
+  <main class="container main-content">
 
     <section class="greeting">
       <h1>Седона-небольшой городок в аризоне,<br> заслуживающий большего!</h1>
@@ -118,7 +118,7 @@
       <button class="button button-search" type="button">Поиск гостиницы в Седоне</button>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352422.0203109469!2d-111.81384110429498!3d34.8501858081153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da15809a0dee3%3A0x22ca556fbe412052!2sSedona%20%2F%20Red%20Rock%20Country!5e0!3m2!1sru!2sru!4v1603750138275!5m2!1sru!2sru" width="1200" height="594" frameborder="0" style="border:0;" allowfullscreen="Forest Rd, Sedona, Соединенные Штаты" aria-hidden="false" tabindex="0"></iframe>
     </section>
-
+</div>
   </main>
 
   <footer class="absolute-footer main-footer container">
@@ -161,21 +161,48 @@
     <form class="appointment-form" action="https://echo.htmlacademy.ru/courses" method="post">
       <p class="appointment-item">
         <label for="data-into">Дата заезда:</label>
-        <input type="text" name="date" value="24 апреля 2017">
+        <input type="text" id="data-into" name="date" value="24 апреля 2017">
       </p>
       <p class="appointment-item">
         <label for="data-exit">Дата выезда:</label>
-        <input type="text" name="date" placeholder="4 июня 2017">
+        <input type="text" id="data-exit" name="date" value="4 июня 2017">
       </p>
-      <p class="appointment-item">
+      <p class="appointment-age">
         <label for="old">Взрослые:</label>
-        <input type="number" value="2">
+        <input type="text" id="old" name="number" value="2">
         <label for="children">Дети:</label>
-        <input type="number" value="0">
+        <input type="text" id="children" name="number" value="0">
       </p>
       <p>
         <button class="button button-find" type="button">Найти</button>
       </p>
+      <!--
+      <table class="appointment-item">
+        <tr class="appointment-item">
+          <td><label for="data-into" for="data-arrival">Дата заезда:</label></td>
+          <td><input type="text" id="data-arrival" name="date" value="24 апреля 2017"></td>
+      </tr>
+      <tr class="appointment-item">
+      <p class="appointment-item">
+        <td><label for="data-exit" for="data-departure">Дата выезда:</label></td>
+        <td><input type="text" id="data-departure"name="date" placeholder="4 июня 2017"></td>
+      </tr>
+      <tr class="appointment-age">
+        <td>
+          <label for="old">Взрослые:</label>
+          <input type="number" id="old" value="2">
+          <label for="children">Дети:</label>
+          <input type="number" id="children" value="0">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="button button-find" type="button">Найти</button>
+        </td>
+      </tr>
+      </table>
+       -->
+
     </form>
 
   </section>

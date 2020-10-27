@@ -45,6 +45,7 @@
   --special-circle: #ABABAB;
   --special-locked: #6A6A6A;
   --special-line: #E5E5E5;
+  --special-form: #A9A9A9;
 
   --special-logo-active:#BDBBBC;
 }
@@ -153,13 +154,17 @@ img{
   margin: 0 auto;
   padding: 0 10px;
 }
+.page-shadow{
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 .nav-hotels a{
   color: var(--special);
   font-weight: bold;
 }
-.page-shadow{
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-}
+
 /* background */
 .main-content::before {
   content: "";
@@ -587,7 +592,11 @@ img{
   padding-bottom: 20px;
 }
 
-/* footer*/
+/* footer
+position: relative;
+left: 0;
+bottom: 150px;
+*/
 .main-footer{
   text-align: center;
   padding: 0;
@@ -595,12 +604,7 @@ img{
   margin-bottom: 36px;
   background-color: var(--basic-white);
 }
-.absolute-footer{
-  position: relative;
-  left: 0;
-  bottom: 150px;
-  background-color: rgba(255, 255, 255, 0.9);
-}
+
 .main-footer .container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -640,11 +644,18 @@ img{
   padding: 0;
   list-style: none;
 }
+.absolute-footer{
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-top: -120px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+}
 
 
 
-
-/* Modal */
+/* Modal
+ */
 .modal{
   display: ;
   position: fixed;
@@ -655,26 +666,47 @@ img{
   margin: auto;
   background-color: var(--basic-white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  width: 570px;
+  height: 395px;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  width: 570px;
-  height: 395px;
 }
+
 .appointment-form{
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.appointment-item,
+.appointment-age{
+  width: 568px;
+
 }
 .appointment-item{
-  width: 568px;
+  margin-bottom: 30px;
 }
-.appointment-form label{
-  display: block;
+.appointment-age{
+  margin-bottom: 40px;
+}
+.appointment-item label{
   margin-left: 55px;
-  margin-right: 20px;
+  margin-right: 10px;
+}
+.appointment-age label:nth-of-type(1){
+  margin-left: 55px;
+  margin-right: 30px;
+}
+.appointment-age label:nth-of-type(2){
+  margin-right: 30px;
+  margin-left: 40px;
 }
 .appointment-form input{
+  width: 346px;
   padding-top: 6px;
   padding-right: 100px;
   padding-bottom: 6px;
@@ -684,6 +716,54 @@ img{
   border: none;
   box-sizing: border-box;
 }
+.appointment-age input{
+  width: 114px;
+  padding: 6px 39px;
+  text-align: center;
+  font: inherit;
+  background-color: var(--basic-grey-light);
+  border: none;
+  box-sizing: border-box;
+}
+.appointment-item input,
+.appointment-age input{
+  position: relative;
+}
+.appointment-item input::after{
+  position: absolute;
+  content: "";
+  display: block;
+  right: 5px;
+  width: 21px;
+  height: 23px;
+  background-image:  url("../img/calendar.svg");
+  background-repeat: no-repeat;
+}
+
+.appointment-age input::before{
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  width: 12px;
+  height: 3px;
+  background-color: var(--special-form);
+}
+.appointment-age input::after{
+  content: "";
+  position: absolute;
+  right: -10px;
+  width: 11px;
+  height: 11px;
+  background-image:  url("../img/plus.svg");
+  background-repeat: no-repeat;
+}
+/*
+.appointment-form input:nth-child(3),
+.appointment-form input:last-child{
+  width: 114px;
+}
+*/
 /* Button */
 
 .button{
