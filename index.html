@@ -161,17 +161,31 @@
     <form class="appointment-form" action="https://echo.htmlacademy.ru/courses" method="post">
       <p class="appointment-item">
         <label for="data-into">Дата заезда:</label>
+        <div class="data-calendar">
         <input type="text" id="data-into" name="date" value="24 апреля 2017">
+        <button class="calendar button-modal" type="button"></button>
+        </div>
       </p>
       <p class="appointment-item">
         <label for="data-exit">Дата выезда:</label>
-        <input type="text" id="data-exit" name="date" value="4 июня 2017">
+        <div class="data-calendar">
+          <input type="text" id="data-exit" name="date" value="4 июня 2017">
+          <button class="calendar button-modal" type="button"></button>
+        </div>
       </p>
       <p class="appointment-age">
         <label for="old">Взрослые:</label>
-        <input type="text" id="old" name="number" value="2">
+        <div class="age">
+          <input type="text" id="old" name="number" value="2">
+          <button class="plus button-modal" type="button"></button>
+          <button class="minus button-modal" type="button"></button>
+        </div>
         <label for="children">Дети:</label>
-        <input type="text" id="children" name="number" value="0">
+        <div class="age">
+          <input type="text" id="children" name="number" value="0">
+          <button class="plus button-modal" type="button"></button>
+          <button class="minus button-modal" type="button"></button>
+        </div>
       </p>
       <p>
         <button class="button button-find" type="button">Найти</button>

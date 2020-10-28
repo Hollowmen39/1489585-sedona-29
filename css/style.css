@@ -92,7 +92,17 @@ img{
 }
 
 /* Main header */
-
+.site-navigation a:hover,
+.site-navigation a:focus,
+.catalog-item a:hover,
+.catalog-item a:focus{
+  color: var(--basic-blue);
+}
+.site-navigation a:active,
+.catalog-item a:active{
+  color: var(--basic-black);
+  opacity: 0.3;
+}
 /* User navigation*/
 .main-navigation{
   background-color: var(--basic-white);
@@ -271,9 +281,6 @@ img{
   font-weight: 700;
   padding-bottom: 10px;
 }
-.range-filter{
-  margin-top: 1px;
-}
 .range-controls {
   position: relative;
   height: 20px;
@@ -318,6 +325,7 @@ img{
 .price-controls label{
   font-size: 14px;
   line-height: 21px;
+  margin-left: 50px;
 }
 .price-controls input {
   width: 60px;
@@ -326,16 +334,25 @@ img{
   font-family: inherit;
   font-size: inherit;
   color: var(--basic-white);
+  background-color: transparent;
+  border: none;
 }
 .price-controls{
+  position: relative;
   display: flex;
   justify-content: space-around;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
 }
-.button-show{
-  align-items: center;
+.price-controls::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 150px;
+    width: 2px;
+    height: 22px;
+    background-color: var(--basic-white);
 }
-
-
 
 /* Breadcrumbs */
 .filters-search{
@@ -361,7 +378,6 @@ img{
   font-size: 12px;
   line-height: 18px;
   margin-right: 290px;
-
 }
 .filters-option .button-filters{
   margin-left: 33px;
@@ -672,20 +688,17 @@ bottom: 150px;
   font-size: 14px;
   line-height: 26px;
 }
-
 .appointment-form{
   margin: 0;
   margin-top: 30px;
   padding: 0;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .appointment-item,
 .appointment-age{
-  width: 568px;
-
+  width: 100%;
 }
 .appointment-item{
   margin-bottom: 30px;
@@ -716,7 +729,7 @@ bottom: 150px;
   border: none;
   box-sizing: border-box;
 }
-.appointment-age input{
+.age input{
   width: 114px;
   padding: 6px 39px;
   text-align: center;
@@ -725,45 +738,50 @@ bottom: 150px;
   border: none;
   box-sizing: border-box;
 }
-.appointment-item input,
-.appointment-age input{
+.data-calendar,
+.age{
   position: relative;
 }
-.appointment-item input::after{
+.age{
+}
+.calendar{
   position: absolute;
-  content: "";
-  display: block;
-  right: 5px;
+  margin: 0;
+  padding: 0;
+  right: 7px;
+  bottom: 8px;
   width: 21px;
   height: 23px;
-  background-image:  url("../img/calendar.svg");
+  background-image: url("../img/calendar.svg");
   background-repeat: no-repeat;
+  border: none;
 }
-
-.appointment-age input::before{
-  content: "";
+.plus{
   position: absolute;
-  top: 3px;
+  margin: 0;
+  padding: 0;
+  right: 13px;
+  bottom: 14px;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  border: none;
+}
+.minus{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 12px;
+  height: 3px;
+  top: 50%;
   left: 12px;
   width: 12px;
   height: 3px;
   background-color: var(--special-form);
+  border: none;
 }
-.appointment-age input::after{
-  content: "";
-  position: absolute;
-  right: -10px;
-  width: 11px;
-  height: 11px;
-  background-image:  url("../img/plus.svg");
-  background-repeat: no-repeat;
-}
-/*
-.appointment-form input:nth-child(3),
-.appointment-form input:last-child{
-  width: 114px;
-}
-*/
+
 /* Button */
 
 .button{
@@ -813,6 +831,7 @@ bottom: 150px;
 .button:active,
 .social-button:active{
   background-color: var(--basic-blue-active);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .button-search,
@@ -868,8 +887,25 @@ bottom: 150px;
   border-right-style: none;
   border-bottom-style: dotted;
   border-left-style: none;
+  border-color: var(--basic-blue);
   text-transform: uppercase;
+  opacity: 0.3;
 }
+.button-price{
+  color: var(--basic-blue);
+  border: none;
+  opacity: 1;
+}
+.button-filters:hover,
+.button-filters:focus{
+  color: var(--basic-blue);
+  opacity: 1;
+}
+.button-filters:active{
+  color: var(--basic-black);
+  opacity: 1;
+}
+
 
 .button-result{
   width: 133px;
@@ -882,6 +918,7 @@ bottom: 150px;
   color: var(--basic-white);
   background: none;
   border: 2px solid var(--basic-white);
+  margin-left: 80px;
 }
 .button-result:hover,
 .button-result:focus{

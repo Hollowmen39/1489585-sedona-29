@@ -69,13 +69,12 @@
 
           <fieldset class="filter-item">
             <legend>Стоимость с сутки (Р):</legend>
-            <div class="range-filter">
               <div class="price-controls">
-                <label class="min-price">
-                  от <input type="number" name="min-price" value="0">
+                <label class="min-price" for="min-price">
+                  от <input type="text" name="min-price" id="min-price" value="0">
                 </label>
-                <label class="max-price">
-                  до <input type="number" name="max-price" value="3000">
+                <label class="max-price" for="max-price">
+                  до <input type="text" name="max-price" id="max-price" value="3000">
                 </label>
               </div>
 
@@ -87,8 +86,7 @@
                 <div class="toggle toggle-max" tabindex="0"></div>
               </div>
 
-              <button class="button button-result button-show">Показать</button>
-            </div>
+              <button class="button button-result" type="button">Показать</button>
           </fieldset>
         </div>
       </form>
@@ -100,13 +98,13 @@
       <p>Найдено: 3</p>
       <div class="filters-option">
         Сортировка:
-        <button class="button-filters">
+        <button class="button-filters button-price" type="button">
           По цене
         </button>
-        <button class="button-filters">
+        <button class="button-filters" type="button">
           По типу
         </button>
-        <button class="button-filters">
+        <button class="button-filters" type="button">
           По рейтингу
         </button>
       </div>
@@ -131,7 +129,7 @@
             <img src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara resort & spa">
           </a>
           <div class="catalog-info">
-            <p class="hotel-name">Amara resort & spa</p>
+            <p class="hotel-name"><a href="#">Amara resort & spa</a></p>
             <table>
               <tr class="hotel-price">
                 <td>Гостиница</td>
@@ -158,7 +156,7 @@
           </a>
 
           <div class="catalog-info">
-            <p class="hotel-name">Desert Quail Inn</p>
+            <p class="hotel-name"><a href="#">Desert Quail Inn</a></p>
             <table>
               <tr class="hotel-price">
                 <td>Мотель</td>
@@ -184,7 +182,7 @@
             <img src="img/villas.jpg" width="135" height="90" alt="Апартаменты Villas at poco Diablo">
           </a>
           <div class="catalog-info">
-            <p class="hotel-name">Villas at poco Diablo</p>
+            <p class="hotel-name"><a href="#">Villas at poco Diablo</a></p>
             <table>
               <tr class="hotel-price">
                 <td>Апартаменты</td>
