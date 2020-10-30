@@ -696,27 +696,39 @@ bottom: 150px;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .appointment-item,
-.appointment-age{
-  width: 100%;
+.appointment-age,
+.age-children{
+  padding: 0;
+  margin: 0;
 }
-.appointment-item{
+.data-calendar{
+  width: 570px;
   margin-bottom: 30px;
 }
 .appointment-age{
+  display: flex;
+  justify-content: space-around;
+  width: 570px;
   margin-bottom: 40px;
 }
-.appointment-item label{
+.data-calendar label{
   margin-left: 55px;
   margin-right: 10px;
 }
-.appointment-age label:nth-of-type(1){
-  margin-left: 55px;
+.age-old label:nth-of-type(1){
   margin-right: 30px;
 }
-.appointment-age label:nth-of-type(2){
+.age-children label:nth-of-type(1){
   margin-right: 30px;
   margin-left: 40px;
+}
+.age-old{
+  margin-left: 45px;
+}
+.age-children{
+  margin-right: 45px;
 }
 .appointment-form input{
   width: 346px;
@@ -729,7 +741,8 @@ bottom: 150px;
   border: none;
   box-sizing: border-box;
 }
-.age input{
+.age-old input,
+.age-children input{
   width: 114px;
   padding: 6px 39px;
   text-align: center;
@@ -739,21 +752,18 @@ bottom: 150px;
   box-sizing: border-box;
 }
 .data-calendar,
-.age{
+.age-old,
+.age-children{
   position: relative;
-}
-.age{
 }
 .calendar{
   position: absolute;
   margin: 0;
   padding: 0;
-  right: 7px;
+  right: 75px;
   bottom: 8px;
   width: 21px;
   height: 23px;
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
   border: none;
 }
 .plus{
@@ -764,8 +774,6 @@ bottom: 150px;
   bottom: 14px;
   width: 11px;
   height: 11px;
-  background-image: url("../img/plus.svg");
-  background-repeat: no-repeat;
   border: none;
 }
 .minus{
@@ -775,13 +783,42 @@ bottom: 150px;
   width: 12px;
   height: 3px;
   top: 50%;
-  left: 12px;
+  right: 90px;
   width: 12px;
   height: 3px;
   background-color: var(--special-form);
   border: none;
 }
-
+.minus:hover,
+.minus:focus{
+  background-color: var(--basic-black);
+}
+.minus:active{
+  background-color: var(--basic-blue);
+}
+.plus:hover path,
+.plus:focus path{
+  fill: var(--basic-black);
+}
+.plus:active path{
+  fill: var(--basic-blue);
+}
+.calendar:hover path,
+.calendar:focus path{
+  fill: var(--basic-black);
+}
+.calendar:active path{
+  fill: var(--basic-blue);
+}
+.appointment-form input:hover,
+.appointment-form input:focus{
+  background-color: var(--basic-grey-dark);
+}
+.appointment-form input:active{
+  background: #FFFFFF;
+  border: 2px solid #E5E5E5;
+  box-sizing: border-box;
+}
 /* Button */
 
 .button{
